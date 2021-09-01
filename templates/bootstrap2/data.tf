@@ -27,6 +27,10 @@ locals {
     for usr in data.anypoint_users.users_list.users : usr.username => usr
   }
 
+  data_teams_map = {
+    for team in data.anypoint_teams.teams_list.teams: team.team_name => team
+  }
+
 }
 
 
@@ -48,5 +52,12 @@ data "anypoint_users" "users_list" {
   org_id = var.root_org
   depends_on = [
     anypoint_user.users
+  ]
+}
+
+data "anypoint_teams" "teams_list" {
+  org_id = var.root_org
+  depends_on = [
+    anypoint_team.teams
   ]
 }
