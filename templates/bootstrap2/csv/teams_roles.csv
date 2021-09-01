@@ -1,0 +1,135 @@
+team_name,name,context_env_name
+Org Admins,API Manager Environment Administrator,0
+Org Admins,API Group Administrator,
+Org Admins,API Versions Owner,
+Org Admins,Anypoint Monitoring User,
+Org Admins,Exchange Administrator,
+Org Admins,Organization Administrator,
+Org Admins,Cloudhub Network Administrator,
+Org Admins,Visualizer Editor,
+Consumers,Portals Viewer,
+Consumers,Exchange Viewer,
+Consumers,Exchange Viewer,
+Developers,API Manager Environment Administrator,0
+Developers,Deploy API Proxies,0
+Developers,Manage API Alerts,0
+Developers,Manage APIs Configuration,0
+Developers,Manage Contracts,0
+Developers,Manage Policies,0
+Developers,View API Alerts,0
+Developers,View Contracts,0
+Developers,View Policies,0
+Developers,API Creator,
+Developers,API Versions Owner,
+Developers,Anypoint Monitoring User,
+Developers,Design Center Developer,
+Developers,Exchange Contributor,
+Developers,Clear destinations,0
+Developers,Manage clients,0
+Developers,Manage destinations,0
+Developers,View clients,0
+Developers,View destinations,0
+Developers,Cloudhub Network Viewer,
+Developers,Delete Applications,0
+Developers,Download Applications,0
+Developers,Manage Alerts,0
+Developers,Manage Application Data,0
+Developers,Manage Queues,0
+Developers,Manage Schedules,0
+Developers,Manage Settings,0
+Developers,Manage Tenants,0
+Developers,Read Alerts,0
+Developers,Read Applications,0
+Developers,Manage Application Flows,0
+Developers,Create Applications,0
+Developers,Visualizer Editor,
+Ops,API Manager Environment Administrator,1
+Ops,Deploy API Proxies,1
+Ops,Manage API Alerts,1
+Ops,Manage APIs Configuration,1
+Ops,Manage Contracts,1
+Ops,Manage Policies,1
+Ops,View API Alerts,1
+Ops,View Contracts,1
+Ops,View Policies,1
+Ops,API Creator,
+Ops,API Versions Owner,
+Ops,Anypoint Monitoring User,
+Ops,Exchange Contributor,
+Ops,Clear destinations,1
+Ops,Manage clients,1
+Ops,Manage destinations,1
+Ops,View clients,1
+Ops,View destinations,1
+Ops,Cloudhub Network Viewer,
+Ops,Delete Applications,1
+Ops,Download Applications,1
+Ops,Manage Alerts,1
+Ops,Manage Application Data,1
+Ops,Manage Queues,1
+Ops,Manage Schedules,1
+Ops,Manage Settings,1
+Ops,Manage Tenants,1
+Ops,Read Alerts,1
+Ops,Read Applications,1
+Ops,Manage Application Flows,1
+Ops,Create Applications,1
+Ops,Visualizer Editor,
+Testers,API Manager Environment Administrator,0
+Testers,API Manager Environment Administrator,1
+Testers,Deploy API Proxies,0
+Testers,Deploy API Proxies,1
+Testers,Manage API Alerts,0
+Testers,Manage API Alerts,1
+Testers,Manage APIs Configuration,0
+Testers,Manage APIs Configuration,1
+Testers,Manage Contracts,0
+Testers,Manage Contracts,1
+Testers,Manage Policies,0
+Testers,Manage Policies,1
+Testers,View API Alerts,0
+Testers,View API Alerts,1
+Testers,View Contracts,0
+Testers,View Contracts,1
+Testers,View Policies,0
+Testers,View Policies,1
+Testers,API Creator,
+Testers,API Versions Owner,
+Testers,Anypoint Monitoring User,
+Testers,Exchange Contributor,
+Testers,Clear destinations,0
+Testers,Clear destinations,1
+Testers,Manage clients,0
+Testers,Manage clients,1
+Testers,Manage destinations,0
+Testers,Manage destinations,1
+Testers,View clients,0
+Testers,View clients,1
+Testers,View destinations,0
+Testers,View destinations,1
+Testers,Cloudhub Network Viewer,
+Testers,Delete Applications,0
+Testers,Delete Applications,1
+Testers,Download Applications,0
+Testers,Download Applications,1
+Testers,Manage Alerts,0
+Testers,Manage Alerts,1
+Testers,Manage Application Data,0
+Testers,Manage Application Data,1
+Testers,Manage Queues,0
+Testers,Manage Queues,1
+Testers,Manage Schedules,0
+Testers,Manage Schedules,1
+Testers,Manage Settings,0
+Testers,Manage Settings,1
+Testers,Manage Tenants,0
+Testers,Manage Tenants,1
+Testers,Read Alerts,0
+Testers,Read Alerts,1
+Testers,Read Applications,0
+Testers,Read Applications,1
+Testers,Manage Application Flows,0
+Testers,Manage Application Flows,1
+Testers,Create Applications,0
+Testers,Create Applications,1
+Testers,Visualizer Editor,
