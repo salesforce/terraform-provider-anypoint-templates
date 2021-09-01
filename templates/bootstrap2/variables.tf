@@ -1,13 +1,7 @@
-variable client_id {
-  type        = string
-  default     = ""
-  description = "the client_id of the anypoint connected app"
-}
-
-variable client_secret {
-  type        = string
-  default     = ""
-  description = "the client_secret of the anypoint connected app"
+variable cplan {
+  type = string
+  default = "us"
+  description = "anypoint control plane"
 }
 
 variable username {
