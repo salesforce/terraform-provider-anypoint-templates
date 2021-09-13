@@ -1,0 +1,6 @@
+name,parent_team_name,type
+BG1 Org Admins,BG1 Team,internal
+BG1 Consumers,BG1 Team,internal
+BG1 Developers,BG1 Team,internal
+BG1 Ops,BG1 Team,internal
+BG1 Testers,BG1 Team,internal

@@ -1,0 +1,135 @@
+team_name,name,context_org_name,context_env_name
+BG1 Org Admins,API Manager Environment Administrator,BG1,BG1-DEV
+BG1 Org Admins,API Group Administrator,BG1,
+BG1 Org Admins,API Versions Owner,BG1,
+BG1 Org Admins,Anypoint Monitoring User,BG1,
+BG1 Org Admins,Exchange Administrator,BG1,
+BG1 Org Admins,Organization Administrator,BG1,
+BG1 Org Admins,Cloudhub Network Administrator,BG1,
+BG1 Org Admins,Visualizer Editor,BG1,
+BG1 Consumers,Portals Viewer,BG1,
+BG1 Consumers,Exchange Viewer,BG1,
+BG1 Consumers,Exchange Viewer,CAT,
+BG1 Developers,API Manager Environment Administrator,BG1,BG1-DEV
+BG1 Developers,Deploy API Proxies,BG1,BG1-DEV
+BG1 Developers,Manage API Alerts,BG1,BG1-DEV
+BG1 Developers,Manage APIs Configuration,BG1,BG1-DEV
+BG1 Developers,Manage Contracts,BG1,BG1-DEV
+BG1 Developers,Manage Policies,BG1,BG1-DEV
+BG1 Developers,View API Alerts,BG1,BG1-DEV
+BG1 Developers,View Contracts,BG1,BG1-DEV
+BG1 Developers,View Policies,BG1,BG1-DEV
+BG1 Developers,API Creator,BG1,
+BG1 Developers,API Versions Owner,BG1,
+BG1 Developers,Anypoint Monitoring User,BG1,
+BG1 Developers,Design Center Developer,BG1,
+BG1 Developers,Exchange Contributor,BG1,
+BG1 Developers,Clear destinations,BG1,BG1-DEV
+BG1 Developers,Manage clients,BG1,BG1-DEV
+BG1 Developers,Manage destinations,BG1,BG1-DEV
+BG1 Developers,View clients,BG1,BG1-DEV
+BG1 Developers,View destinations,BG1,BG1-DEV
+BG1 Developers,Cloudhub Network Viewer,BG1,
+BG1 Developers,Delete Applications,BG1,BG1-DEV
+BG1 Developers,Download Applications,BG1,BG1-DEV
+BG1 Developers,Manage Alerts,BG1,BG1-DEV
+BG1 Developers,Manage Application Data,BG1,BG1-DEV
+BG1 Developers,Manage Queues,BG1,BG1-DEV
+BG1 Developers,Manage Schedules,BG1,BG1-DEV
+BG1 Developers,Manage Settings,BG1,BG1-DEV
+BG1 Developers,Manage Tenants,BG1,BG1-DEV
+BG1 Developers,Read Alerts,BG1,BG1-DEV
+BG1 Developers,Read Applications,BG1,BG1-DEV
+BG1 Developers,Manage Application Flows,BG1,BG1-DEV
+BG1 Developers,Create Applications,BG1,BG1-DEV
+BG1 Developers,Visualizer Editor,CAT,
+BG1 Ops,API Manager Environment Administrator,BG1,BG1-PROD
+BG1 Ops,Deploy API Proxies,BG1,BG1-PROD
+BG1 Ops,Manage API Alerts,BG1,BG1-PROD
+BG1 Ops,Manage APIs Configuration,BG1,BG1-PROD
+BG1 Ops,Manage Contracts,BG1,BG1-PROD
+BG1 Ops,Manage Policies,BG1,BG1-PROD
+BG1 Ops,View API Alerts,BG1,BG1-PROD
+BG1 Ops,View Contracts,BG1,BG1-PROD
+BG1 Ops,View Policies,BG1,BG1-PROD
+BG1 Ops,API Creator,BG1,
+BG1 Ops,API Versions Owner,BG1,
+BG1 Ops,Anypoint Monitoring User,BG1,
+BG1 Ops,Exchange Contributor,BG1,
+BG1 Ops,Clear destinations,BG1,BG1-PROD
+BG1 Ops,Manage clients,BG1,BG1-PROD
+BG1 Ops,Manage destinations,BG1,BG1-PROD
+BG1 Ops,View clients,BG1,BG1-PROD
+BG1 Ops,View destinations,BG1,BG1-PROD
+BG1 Ops,Cloudhub Network Viewer,BG1,
+BG1 Ops,Delete Applications,BG1,BG1-PROD
+BG1 Ops,Download Applications,BG1,BG1-PROD
+BG1 Ops,Manage Alerts,BG1,BG1-PROD
+BG1 Ops,Manage Application Data,BG1,BG1-PROD
+BG1 Ops,Manage Queues,BG1,BG1-PROD
+BG1 Ops,Manage Schedules,BG1,BG1-PROD
+BG1 Ops,Manage Settings,BG1,BG1-PROD
+BG1 Ops,Manage Tenants,BG1,BG1-PROD
+BG1 Ops,Read Alerts,BG1,BG1-PROD
+BG1 Ops,Read Applications,BG1,BG1-PROD
+BG1 Ops,Manage Application Flows,BG1,BG1-PROD
+BG1 Ops,Create Applications,BG1,BG1-PROD
+BG1 Ops,Visualizer Editor,CAT,
+BG1 Testers,API Manager Environment Administrator,BG1,BG1-DEV
+BG1 Testers,API Manager Environment Administrator,BG1,BG1-PROD
+BG1 Testers,Deploy API Proxies,BG1,BG1-DEV
+BG1 Testers,Deploy API Proxies,BG1,BG1-PROD
+BG1 Testers,Manage API Alerts,BG1,BG1-DEV
+BG1 Testers,Manage API Alerts,BG1,BG1-PROD
+BG1 Testers,Manage APIs Configuration,BG1,BG1-DEV
+BG1 Testers,Manage APIs Configuration,BG1,BG1-PROD
+BG1 Testers,Manage Contracts,BG1,BG1-DEV
+BG1 Testers,Manage Contracts,BG1,BG1-PROD
+BG1 Testers,Manage Policies,BG1,BG1-DEV
+BG1 Testers,Manage Policies,BG1,BG1-PROD
+BG1 Testers,View API Alerts,BG1,BG1-DEV
+BG1 Testers,View API Alerts,BG1,BG1-PROD
+BG1 Testers,View Contracts,BG1,BG1-DEV
+BG1 Testers,View Contracts,BG1,BG1-PROD
+BG1 Testers,View Policies,BG1,BG1-DEV
+BG1 Testers,View Policies,BG1,BG1-PROD
+BG1 Testers,API Creator,BG1,
+BG1 Testers,API Versions Owner,BG1,
+BG1 Testers,Anypoint Monitoring User,BG1,
+BG1 Testers,Exchange Contributor,BG1,
+BG1 Testers,Clear destinations,BG1,BG1-DEV
+BG1 Testers,Clear destinations,BG1,BG1-PROD
+BG1 Testers,Manage clients,BG1,BG1-DEV
+BG1 Testers,Manage clients,BG1,BG1-PROD
+BG1 Testers,Manage destinations,BG1,BG1-DEV
+BG1 Testers,Manage destinations,BG1,BG1-PROD
+BG1 Testers,View clients,BG1,BG1-DEV
+BG1 Testers,View clients,BG1,BG1-PROD
+BG1 Testers,View destinations,BG1,BG1-DEV
+BG1 Testers,View destinations,BG1,BG1-PROD
+BG1 Testers,Cloudhub Network Viewer,BG1,
+BG1 Testers,Delete Applications,BG1,BG1-DEV
+BG1 Testers,Delete Applications,BG1,BG1-PROD
+BG1 Testers,Download Applications,BG1,BG1-DEV
+BG1 Testers,Download Applications,BG1,BG1-PROD
+BG1 Testers,Manage Alerts,BG1,BG1-DEV
+BG1 Testers,Manage Alerts,BG1,BG1-PROD
+BG1 Testers,Manage Application Data,BG1,BG1-DEV
+BG1 Testers,Manage Application Data,BG1,BG1-PROD
+BG1 Testers,Manage Queues,BG1,BG1-DEV
+BG1 Testers,Manage Queues,BG1,BG1-PROD
+BG1 Testers,Manage Schedules,BG1,BG1-DEV
+BG1 Testers,Manage Schedules,BG1,BG1-PROD
+BG1 Testers,Manage Settings,BG1,BG1-DEV
+BG1 Testers,Manage Settings,BG1,BG1-PROD
+BG1 Testers,Manage Tenants,BG1,BG1-DEV
+BG1 Testers,Manage Tenants,BG1,BG1-PROD
+BG1 Testers,Read Alerts,BG1,BG1-DEV
+BG1 Testers,Read Alerts,BG1,BG1-PROD
+BG1 Testers,Read Applications,BG1,BG1-DEV
+BG1 Testers,Read Applications,BG1,BG1-PROD
+BG1 Testers,Manage Application Flows,BG1,BG1-DEV
+BG1 Testers,Manage Application Flows,BG1,BG1-PROD
+BG1 Testers,Create Applications,BG1,BG1-DEV
+BG1 Testers,Create Applications,BG1,BG1-PROD
+BG1 Testers,Visualizer Editor,CAT,
