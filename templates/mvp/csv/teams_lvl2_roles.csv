@@ -1,0 +1,136 @@
+team_name,name,context_org_name,context_env_name
+Max BG Org Admins,API Manager Environment Administrator,max_bg,DEV
+Max BG Org Admins,API Manager Environment Administrator,max_bg,QA
+Max BG Org Admins,API Manager Environment Administrator,max_bg,PROD
+Max BG Org Admins,API Group Administrator,max_bg,
+Max BG Org Admins,API Versions Owner,max_bg,
+Max BG Org Admins,Monitoring Administrator,max_bg,
+Max BG Org Admins,Exchange Administrator,max_bg,
+Max BG Org Admins,Organization Administrator,max_bg,
+Max BG Org Admins,Cloudhub Network Administrator,max_bg,
+Max BG Org Admins,Visualizer Editor,max_bg,
+Max BG Consumers,Exchange Viewer,max_bg,
+Max BG Developers,API Manager Environment Administrator,max_bg,DEV
+Max BG Developers,Deploy API Proxies,max_bg,DEV
+Max BG Developers,Manage API Alerts,max_bg,DEV
+Max BG Developers,Manage APIs Configuration,max_bg,DEV
+Max BG Developers,Manage Contracts,max_bg,DEV
+Max BG Developers,Manage Policies,max_bg,DEV
+Max BG Developers,View API Alerts,max_bg,DEV
+Max BG Developers,View Contracts,max_bg,DEV
+Max BG Developers,View Policies,max_bg,DEV
+Max BG Developers,API Creator,max_bg,
+Max BG Developers,API Versions Owner,max_bg,
+Max BG Developers,Monitoring Administrator,max_bg,
+Max BG Developers,Design Center Developer,max_bg,
+Max BG Developers,Exchange Contributor,max_bg,
+Max BG Developers,Clear destinations,max_bg,DEV
+Max BG Developers,Manage clients,max_bg,DEV
+Max BG Developers,Manage destinations,max_bg,DEV
+Max BG Developers,View clients,max_bg,DEV
+Max BG Developers,View destinations,max_bg,DEV
+Max BG Developers,Cloudhub Network Viewer,max_bg,
+Max BG Developers,Delete Applications,max_bg,DEV
+Max BG Developers,Download Applications,max_bg,DEV
+Max BG Developers,Manage Alerts,max_bg,DEV
+Max BG Developers,Manage Application Data,max_bg,DEV
+Max BG Developers,Manage Queues,max_bg,DEV
+Max BG Developers,Manage Schedules,max_bg,DEV
+Max BG Developers,Manage Settings,max_bg,DEV
+Max BG Developers,Manage Tenants,max_bg,DEV
+Max BG Developers,Read Alerts,max_bg,DEV
+Max BG Developers,Read Applications,max_bg,DEV
+Max BG Developers,Manage Application Flows,max_bg,DEV
+Max BG Developers,Create Applications,max_bg,DEV
+Max BG Developers,Visualizer Editor,CAT,
+Max BG Developers,API Manager Environment Administrator,max_bg,QA
+Max BG Developers,Deploy API Proxies,max_bg,QA
+Max BG Developers,Manage API Alerts,max_bg,QA
+Max BG Developers,Manage APIs Configuration,max_bg,QA
+Max BG Developers,Manage Contracts,max_bg,QA
+Max BG Developers,Manage Policies,max_bg,QA
+Max BG Developers,View API Alerts,max_bg,QA
+Max BG Developers,View Contracts,max_bg,QA
+Max BG Developers,View Policies,max_bg,QA
+Max BG Developers,Clear destinations,max_bg,QA
+Max BG Developers,Manage clients,max_bg,QA
+Max BG Developers,Manage destinations,max_bg,QA
+Max BG Developers,View clients,max_bg,QA
+Max BG Developers,View destinations,max_bg,QA
+Max BG Developers,Delete Applications,max_bg,QA
+Max BG Developers,Download Applications,max_bg,QA
+Max BG Developers,Manage Alerts,max_bg,QA
+Max BG Developers,Manage Application Data,max_bg,QA
+Max BG Developers,Manage Queues,max_bg,QA
+Max BG Developers,Manage Schedules,max_bg,QA
+Max BG Developers,Manage Settings,max_bg,QA
+Max BG Developers,Manage Tenants,max_bg,QA
+Max BG Developers,Read Alerts,max_bg,QA
+Max BG Developers,Read Applications,max_bg,QA
+Max BG Developers,Manage Application Flows,max_bg,QA
+Max BG Developers,Create Applications,max_bg,QA
+Max BG Ops,API Manager Environment Administrator,max_bg,PROD
+Max BG Ops,Deploy API Proxies,max_bg,PROD
+Max BG Ops,Manage API Alerts,max_bg,PROD
+Max BG Ops,Manage APIs Configuration,max_bg,PROD
+Max BG Ops,Manage Contracts,max_bg,PROD
+Max BG Ops,Manage Policies,max_bg,PROD
+Max BG Ops,View API Alerts,max_bg,PROD
+Max BG Ops,View Contracts,max_bg,PROD
+Max BG Ops,View Policies,max_bg,PROD
+Max BG Ops,API Creator,max_bg,
+Max BG Ops,API Versions Owner,max_bg,
+Max BG Ops,Monitoring Administrator,max_bg,
+Max BG Ops,Exchange Contributor,max_bg,
+Max BG Ops,Clear destinations,max_bg,PROD
+Max BG Ops,Manage clients,max_bg,PROD
+Max BG Ops,Manage destinations,max_bg,PROD
+Max BG Ops,View clients,max_bg,PROD
+Max BG Ops,View destinations,max_bg,PROD
+Max BG Ops,Cloudhub Network Viewer,max_bg,
+Max BG Ops,Delete Applications,max_bg,PROD
+Max BG Ops,Download Applications,max_bg,PROD
+Max BG Ops,Manage Alerts,max_bg,PROD
+Max BG Ops,Manage Application Data,max_bg,PROD
+Max BG Ops,Manage Queues,max_bg,PROD
+Max BG Ops,Manage Schedules,max_bg,PROD
+Max BG Ops,Manage Settings,max_bg,PROD
+Max BG Ops,Manage Tenants,max_bg,PROD
+Max BG Ops,Read Alerts,max_bg,PROD
+Max BG Ops,Read Applications,max_bg,PROD
+Max BG Ops,Manage Application Flows,max_bg,PROD
+Max BG Ops,Create Applications,max_bg,PROD
+Max BG Ops,Visualizer Editor,CAT,
+Max BG Testers,API Manager Environment Administrator,max_bg,QA
+Max BG Testers,Deploy API Proxies,max_bg,QA
+Max BG Testers,Manage API Alerts,max_bg,QA
+Max BG Testers,Manage APIs Configuration,max_bg,QA
+Max BG Testers,Manage Contracts,max_bg,QA
+Max BG Testers,Manage Policies,max_bg,QA
+Max BG Testers,View API Alerts,max_bg,QA
+Max BG Testers,View Contracts,max_bg,QA
+Max BG Testers,View Policies,max_bg,QA
+Max BG Testers,API Creator,max_bg,
+Max BG Testers,API Versions Owner,max_bg,
+Max BG Testers,Monitoring Administrator,max_bg,
+Max BG Testers,Exchange Contributor,max_bg,
+Max BG Testers,Clear destinations,max_bg,QA
+Max BG Testers,Manage clients,max_bg,QA
+Max BG Testers,Manage destinations,max_bg,QA
+Max BG Testers,View clients,max_bg,QA
+Max BG Testers,View destinations,max_bg,QA
+Max BG Testers,Cloudhub Network Viewer,max_bg,
+Max BG Testers,Delete Applications,max_bg,QA
+Max BG Testers,Download Applications,max_bg,QA
+Max BG Testers,Manage Alerts,max_bg,QA
+Max BG Testers,Manage Application Data,max_bg,QA
+Max BG Testers,Manage Queues,max_bg,QA
+Max BG Testers,Manage Schedules,max_bg,QA
+Max BG Testers,Manage Settings,max_bg,QA
+Max BG Testers,Manage Tenants,max_bg,QA
+Max BG Testers,Read Alerts,max_bg,QA
+Max BG Testers,Read Applications,max_bg,QA
+Max BG Testers,Manage Application Flows,max_bg,QA
+Max BG Testers,Create Applications,max_bg,QA
+Max BG Testers,Visualizer Editor,CAT,
+Maxy BG Org Admins,Visualizer Editor,CAT,
