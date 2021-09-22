@@ -29,7 +29,7 @@ locals {
   data_roles_list = flatten([for iter in data.anypoint_roles.roles : iter.roles])
 
   # list of all bgs after bg creation
-  all_bgs_list = concat([data.anypoint_bg.bg], anypoint_bg.bgs)
+  all_bgs_list = concat([data.anypoint_bg.bg], anypoint_bg.bgs, data.anypoint_bg.existing_bgs)
 
   #map of all business groups
   data_bg_map = {
@@ -71,6 +71,7 @@ data "anypoint_roles" "roles" {
   }
 }
 
+#ROOT BG
 data "anypoint_bg" "bg" {
   id = var.root_org
   depends_on = [
@@ -78,6 +79,13 @@ data "anypoint_bg" "bg" {
   ]
 }
 
+#EXISTING SUB BGs
+data "anypoint_bg" "existing_bgs" {
+  count = length(var.sub_org_ids)
+  id = element(var.sub_org_ids, count.index)
+}
+
+#CREATED BGs
 data "anypoint_bg" "all_bgs" {
   count = length(local.all_bgs_list)
   id = element(local.all_bgs_list, count.index).id

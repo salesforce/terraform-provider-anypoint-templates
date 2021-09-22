@@ -27,3 +27,9 @@ variable root_team {
   default = ""
   description = "your organization's root team id"
 }
+
+variable sub_org_ids {
+  type = list(string)
+  default = []
+  description = "list of existing sub organization ids"
+}
