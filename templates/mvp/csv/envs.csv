@@ -1,0 +1,7 @@
+bg_name,name,type
+max_bg,DEV,sandbox
+max_bg,QA,sandbox
+max_bg,PROD,production
+maxy_bg,DEV,sandbox
+maxy_bg,QA,sandbox
+maxy_bg,PROD,production
