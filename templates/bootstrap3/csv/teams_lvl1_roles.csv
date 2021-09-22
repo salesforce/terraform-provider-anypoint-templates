@@ -1,6 +1,6 @@
 team_name,name,context_org_name,context_env_name
 Platform Admins,API Group Administrator,BG1,
-Platform Admins,Anypoint Monitoring User,BG1,
+Platform Admins,Monitoring Administrator,BG1,
 Platform Admins,Exchange Administrator,BG1,
 Platform Admins,Organization Administrator,CAT,
 Platform Admins,Audit Log Viewer,BG1,

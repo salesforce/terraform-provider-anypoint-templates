@@ -38,7 +38,15 @@ locals {
 
   #list of all created environments cross bgs
   data_envs_map = {
-    for e in flatten([for b in data.anypoint_bg.all_bgs : b.environments]) : e.name => e...
+    for e in flatten([
+      for b in data.anypoint_bg.all_bgs : [
+        for env in b.environments : merge(
+          {
+            key = "${b.name}:${env.name}"
+            bg_name = b.name
+          }, env)
+      ]
+    ]) : e.key => e...
   }
 
   data_users_map = {
