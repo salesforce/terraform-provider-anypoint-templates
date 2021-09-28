@@ -1,0 +1,15 @@
+name,parent_team_name,type
+name,,type
+Platform Admins,,internal
+lob1 Team,,internal
+lob2 Team,,internal
+lob1 Org Admins,lob1 Team,internal
+lob1 Consumers,lob1 Team,internal
+lob1 Developers,lob1 Team,internal
+lob1 Ops,lob1 Team,internal
+lob1 Testers,lob1 Team,internal
+lob2 Org Admins,lob2 Team,internal
+lob2 Consumers,lob2 Team,internal
+lob2 Developers,lob2 Team,internal
+lob2 Ops,lob2 Team,internal
+lob2 Testers,lob2 Team,internal

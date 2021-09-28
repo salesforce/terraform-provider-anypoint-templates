@@ -1,0 +1,7 @@
+bg_name,env_name,env_type
+lob1,DEV,sandbox
+lob1,UAT,sandbox
+lob1,PRO,production
+lob2,DEV,sandbox
+lob2,UAT,sandbox
+lob2,PRO,production
