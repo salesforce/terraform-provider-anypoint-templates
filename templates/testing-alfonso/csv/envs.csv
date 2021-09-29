@@ -1,0 +1,5 @@
+bg_name,name,type
+CAT_BG,DEV,sandbox
+CAT_BG,UAT,sandbox
+CAT_BG,INT,sandbox
+CAT_BG,PROD,production

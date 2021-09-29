@@ -69,3 +69,5 @@ terraform
 **/params.tfvars.json
 
 release.sh
+templates/testing-alfonso/template.params.tfvars.json
+templates/testing-alfonso/README.md

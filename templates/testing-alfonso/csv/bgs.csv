@@ -1,0 +1,2 @@
+name,owner_username,create_suborgs,create_env,global_deployment,vcores_prod,vcores_sandbox,vcores_design,static_ips,vpcs,lbs,vpns
+CAT_BG,amartino,true,true,true,0.1,0.2,0.1,0,0,0,0
