@@ -1,0 +1,4 @@
+name,owner_username,create_suborgs,create_env,global_deployment,vcores_prod,vcores_sandbox,vcores_design,static_ips,vpcs,lbs,vpns
+cat-bg-1,clennon_mulesoft,true,true,true,0.1,0.2,0.1,0,1,0,0
+cat-bg-2,clennon_mulesoft,true,true,true,0.1,0.2,0.1,0,1,0,0
+cat-bg-3,clennon_mulesoft,true,true,true,0.1,0.2,0.1,0,1,0,0
