@@ -1,0 +1,11 @@
+name,parent_team_name,type
+Customer Developers,Customer Users,internal
+Customer Operations,Customer Users,internal
+Finance Developers,Finance Users,internal
+Finance Operations,Finance Users,internal
+HR Developers,Finance Users,internal
+HR Operations,Finance Users,internal
+Master Data Developers,Master Data Users,internal
+Master Data Operations,Master Data Users,internal
+Supply Chain Developers,Supply Chain Users,internal
+Supply Chain Operations,Supply Chain Users,internal
