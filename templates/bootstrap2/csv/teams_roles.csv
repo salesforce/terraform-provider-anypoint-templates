@@ -1,135 +1,135 @@
 team_name,name,context_env_name
-Org Admins_SOUF,API Manager Environment Administrator,INT
-Org Admins_SOUF,API Group Administrator,
-Org Admins_SOUF,API Versions Owner,
-Org Admins_SOUF,Anypoint Monitoring User,
-Org Admins_SOUF,Exchange Administrator,
-Org Admins_SOUF,Organization Administrator,
-Org Admins_SOUF,Cloudhub Network Administrator,
-Org Admins_SOUF,Visualizer Editor,
-Consumers_SOUF,Portals Viewer,
-Consumers_SOUF,Exchange Viewer,
-Consumers_SOUF,Exchange Viewer,
-Developers_SOUF,API Manager Environment Administrator,INT
-Developers_SOUF,Deploy API Proxies,INT
-Developers_SOUF,Manage API Alerts,INT
-Developers_SOUF,Manage APIs Configuration,INT
-Developers_SOUF,Manage Contracts,INT
-Developers_SOUF,Manage Policies,INT
-Developers_SOUF,View API Alerts,INT
-Developers_SOUF,View Contracts,INT
-Developers_SOUF,View Policies,INT
-Developers_SOUF,API Creator,
-Developers_SOUF,API Versions Owner,
-Developers_SOUF,Anypoint Monitoring User,
-Developers_SOUF,Design Center Developer,
-Developers_SOUF,Exchange Contributor,
-Developers_SOUF,Clear destinations,INT
-Developers_SOUF,Manage clients,INT
-Developers_SOUF,Manage destinations,INT
-Developers_SOUF,View clients,INT
-Developers_SOUF,View destinations,INT
-Developers_SOUF,Cloudhub Network Viewer,
-Developers_SOUF,Delete Applications,INT
-Developers_SOUF,Download Applications,INT
-Developers_SOUF,Manage Alerts,INT
-Developers_SOUF,Manage Application Data,INT
-Developers_SOUF,Manage Queues,INT
-Developers_SOUF,Manage Schedules,INT
-Developers_SOUF,Manage Settings,INT
-Developers_SOUF,Manage Tenants,INT
-Developers_SOUF,Read Alerts,INT
-Developers_SOUF,Read Applications,INT
-Developers_SOUF,Manage Application Flows,INT
-Developers_SOUF,Create Applications,INT
-Developers_SOUF,Visualizer Editor,
-Ops_SOUF,API Manager Environment Administrator,REC
-Ops_SOUF,Deploy API Proxies,REC
-Ops_SOUF,Manage API Alerts,REC
-Ops_SOUF,Manage APIs Configuration,REC
-Ops_SOUF,Manage Contracts,REC
-Ops_SOUF,Manage Policies,REC
-Ops_SOUF,View API Alerts,REC
-Ops_SOUF,View Contracts,REC
-Ops_SOUF,View Policies,REC
-Ops_SOUF,API Creator,
-Ops_SOUF,API Versions Owner,
-Ops_SOUF,Anypoint Monitoring User,
-Ops_SOUF,Exchange Contributor,
-Ops_SOUF,Clear destinations,REC
-Ops_SOUF,Manage clients,REC
-Ops_SOUF,Manage destinations,REC
-Ops_SOUF,View clients,REC
-Ops_SOUF,View destinations,REC
-Ops_SOUF,Cloudhub Network Viewer,
-Ops_SOUF,Delete Applications,REC
-Ops_SOUF,Download Applications,REC
-Ops_SOUF,Manage Alerts,REC
-Ops_SOUF,Manage Application Data,REC
-Ops_SOUF,Manage Queues,REC
-Ops_SOUF,Manage Schedules,REC
-Ops_SOUF,Manage Settings,REC
-Ops_SOUF,Manage Tenants,REC
-Ops_SOUF,Read Alerts,REC
-Ops_SOUF,Read Applications,REC
-Ops_SOUF,Manage Application Flows,REC
-Ops_SOUF,Create Applications,REC
-Ops_SOUF,Visualizer Editor,
-Testers_SOUF,API Manager Environment Administrator,INT
-Testers_SOUF,API Manager Environment Administrator,REC
-Testers_SOUF,Deploy API Proxies,INT
-Testers_SOUF,Deploy API Proxies,REC
-Testers_SOUF,Manage API Alerts,INT
-Testers_SOUF,Manage API Alerts,REC
-Testers_SOUF,Manage APIs Configuration,INT
-Testers_SOUF,Manage APIs Configuration,REC
-Testers_SOUF,Manage Contracts,INT
-Testers_SOUF,Manage Contracts,REC
-Testers_SOUF,Manage Policies,INT
-Testers_SOUF,Manage Policies,REC
-Testers_SOUF,View API Alerts,INT
-Testers_SOUF,View API Alerts,REC
-Testers_SOUF,View Contracts,INT
-Testers_SOUF,View Contracts,REC
-Testers_SOUF,View Policies,INT
-Testers_SOUF,View Policies,REC
-Testers_SOUF,API Creator,
-Testers_SOUF,API Versions Owner,
-Testers_SOUF,Anypoint Monitoring User,
-Testers_SOUF,Exchange Contributor,
-Testers_SOUF,Clear destinations,INT
-Testers_SOUF,Clear destinations,REC
-Testers_SOUF,Manage clients,INT
-Testers_SOUF,Manage clients,REC
-Testers_SOUF,Manage destinations,INT
-Testers_SOUF,Manage destinations,REC
-Testers_SOUF,View clients,INT
-Testers_SOUF,View clients,REC
-Testers_SOUF,View destinations,INT
-Testers_SOUF,View destinations,REC
-Testers_SOUF,Cloudhub Network Viewer,
-Testers_SOUF,Delete Applications,INT
-Testers_SOUF,Delete Applications,REC
-Testers_SOUF,Download Applications,INT
-Testers_SOUF,Download Applications,REC
-Testers_SOUF,Manage Alerts,INT
-Testers_SOUF,Manage Alerts,REC
-Testers_SOUF,Manage Application Data,INT
-Testers_SOUF,Manage Application Data,REC
-Testers_SOUF,Manage Queues,INT
-Testers_SOUF,Manage Queues,REC
-Testers_SOUF,Manage Schedules,INT
-Testers_SOUF,Manage Schedules,REC
-Testers_SOUF,Manage Settings,INT
-Testers_SOUF,Manage Settings,REC
-Testers_SOUF,Manage Tenants,INT
-Testers_SOUF,Manage Tenants,REC
-Testers_SOUF,Read Alerts,INT
-Testers_SOUF,Read Alerts,REC
-Testers_SOUF,Read Applications,INT
-Testers_SOUF,Read Applications,REC
-Testers_SOUF,Manage Application Flows,INT
-Testers_SOUF,Manage Application Flows,REC
-Testers_SOUF,Create Applications,INT
-Testers_SOUF,Create Applications,REC
-Testers_SOUF,Visualizer Editor,
+Org Admins,API Manager Environment Administrator,INT
+Org Admins,API Group Administrator,
+Org Admins,API Versions Owner,
+Org Admins,Anypoint Monitoring User,
+Org Admins,Exchange Administrator,
+Org Admins,Organization Administrator,
+Org Admins,Cloudhub Network Administrator,
+Org Admins,Visualizer Editor,
+Consumers,Portals Viewer,
+Consumers,Exchange Viewer,
+Consumers,Exchange Viewer,
+Developers,API Manager Environment Administrator,INT
+Developers,Deploy API Proxies,INT
+Developers,Manage API Alerts,INT
+Developers,Manage APIs Configuration,INT
+Developers,Manage Contracts,INT
+Developers,Manage Policies,INT
+Developers,View API Alerts,INT
+Developers,View Contracts,INT
+Developers,View Policies,INT
+Developers,API Creator,
+Developers,API Versions Owner,
+Developers,Anypoint Monitoring User,
+Developers,Design Center Developer,
+Developers,Exchange Contributor,
+Developers,Clear destinations,INT
+Developers,Manage clients,INT
+Developers,Manage destinations,INT
+Developers,View clients,INT
+Developers,View destinations,INT
+Developers,Cloudhub Network Viewer,
+Developers,Delete Applications,INT
+Developers,Download Applications,INT
+Developers,Manage Alerts,INT
+Developers,Manage Application Data,INT
+Developers,Manage Queues,INT
+Developers,Manage Schedules,INT
+Developers,Manage Settings,INT
+Developers,Manage Tenants,INT
+Developers,Read Alerts,INT
+Developers,Read Applications,INT
+Developers,Manage Application Flows,INT
+Developers,Create Applications,INT
+Developers,Visualizer Editor,
+Ops,API Manager Environment Administrator,REC
+Ops,Deploy API Proxies,REC
+Ops,Manage API Alerts,REC
+Ops,Manage APIs Configuration,REC
+Ops,Manage Contracts,REC
+Ops,Manage Policies,REC
+Ops,View API Alerts,REC
+Ops,View Contracts,REC
+Ops,View Policies,REC
+Ops,API Creator,
+Ops,API Versions Owner,
+Ops,Anypoint Monitoring User,
+Ops,Exchange Contributor,
+Ops,Clear destinations,REC
+Ops,Manage clients,REC
+Ops,Manage destinations,REC
+Ops,View clients,REC
+Ops,View destinations,REC
+Ops,Cloudhub Network Viewer,
+Ops,Delete Applications,REC
+Ops,Download Applications,REC
+Ops,Manage Alerts,REC
+Ops,Manage Application Data,REC
+Ops,Manage Queues,REC
+Ops,Manage Schedules,REC
+Ops,Manage Settings,REC
+Ops,Manage Tenants,REC
+Ops,Read Alerts,REC
+Ops,Read Applications,REC
+Ops,Manage Application Flows,REC
+Ops,Create Applications,REC
+Ops,Visualizer Editor,
+Testers,API Manager Environment Administrator,INT
+Testers,API Manager Environment Administrator,REC
+Testers,Deploy API Proxies,INT
+Testers,Deploy API Proxies,REC
+Testers,Manage API Alerts,INT
+Testers,Manage API Alerts,REC
+Testers,Manage APIs Configuration,INT
+Testers,Manage APIs Configuration,REC
+Testers,Manage Contracts,INT
+Testers,Manage Contracts,REC
+Testers,Manage Policies,INT
+Testers,Manage Policies,REC
+Testers,View API Alerts,INT
+Testers,View API Alerts,REC
+Testers,View Contracts,INT
+Testers,View Contracts,REC
+Testers,View Policies,INT
+Testers,View Policies,REC
+Testers,API Creator,
+Testers,API Versions Owner,
+Testers,Anypoint Monitoring User,
+Testers,Exchange Contributor,
+Testers,Clear destinations,INT
+Testers,Clear destinations,REC
+Testers,Manage clients,INT
+Testers,Manage clients,REC
+Testers,Manage destinations,INT
+Testers,Manage destinations,REC
+Testers,View clients,INT
+Testers,View clients,REC
+Testers,View destinations,INT
+Testers,View destinations,REC
+Testers,Cloudhub Network Viewer,
+Testers,Delete Applications,INT
+Testers,Delete Applications,REC
+Testers,Download Applications,INT
+Testers,Download Applications,REC
+Testers,Manage Alerts,INT
+Testers,Manage Alerts,REC
+Testers,Manage Application Data,INT
+Testers,Manage Application Data,REC
+Testers,Manage Queues,INT
+Testers,Manage Queues,REC
+Testers,Manage Schedules,INT
+Testers,Manage Schedules,REC
+Testers,Manage Settings,INT
+Testers,Manage Settings,REC
+Testers,Manage Tenants,INT
+Testers,Manage Tenants,REC
+Testers,Read Alerts,INT
+Testers,Read Alerts,REC
+Testers,Read Applications,INT
+Testers,Read Applications,REC
+Testers,Manage Application Flows,INT
+Testers,Manage Application Flows,REC
+Testers,Create Applications,INT
+Testers,Create Applications,REC
+Testers,Visualizer Editor,
