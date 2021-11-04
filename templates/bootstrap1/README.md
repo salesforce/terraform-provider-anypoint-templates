@@ -179,7 +179,7 @@ Following is the description of the columns in the `csv/teams_lvl2_members.csv` 
 * Created resources can only be attached to resources that are created by this template. In other words, you cannot attach resources to existing resources in the platform (prior to terraform execution). The only exception to this rule is: 
   * roles (referenced by their name)
   * root organization (referenced by the index -1)
-* When a team is added to `csv/teams_lvl1.csv` or `csv/teams_lvl2.csv` files, at least one role should be added attached to it in the corresponding roles file.
+* When a team is added to `csv/teams_lvl1.csv` or `csv/teams_lvl2.csv` files, at least one role should be attached to it in the corresponding roles file.
 
 
 
