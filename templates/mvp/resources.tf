@@ -98,7 +98,10 @@ resource "anypoint_team_roles" "lvl2_teams_roles" {
       ], 0)
       context_params = {
         org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
-        envId = length(roles.value["context_env_name"]) > 0 ? element(lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}"), 0).id : null
+        envId = length(roles.value["context_env_name"]) > 0 ? element([ 
+            for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env 
+            if env.organizationid == lookup(local.data_bg_map, roles.value["context_org_name"]).id 
+          ], 0).id : null
       }
     }
   }
