@@ -1,7 +1,5 @@
 # Bootstrap 3
 
-# Bootstrap 1
-
 ## Introduction
 This templates creates the following resources dynamically by filling the csv files contained in the csv folder:
 - Business Groups
@@ -64,7 +62,8 @@ The parameters file is used to contextualize terraform's execution. Following is
   "password": "xxxxxxxx",                             // anypoint password
   "root_org": "xxxxxxxxx-xxxx-xxxx-xxx-xxxxxxxxxx",   // root business group id
   "root_team": "xxxxxxxxx-xxxx-xxxx-xxx-xxxxxxxxxx",  // root team id
-  "cplane": "us"                                      // anypoint control plane
+  "cplane": "us",                                     // anypoint control plane
+  "sub_org_ids": []                                   // the existing sub organizations that you want to use and link resources to
 }
 ```
 
