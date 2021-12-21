@@ -1,0 +1,83 @@
+team_name,name,context_org_name,context_env_name
+Customer Operations,API Manager Environment Administrator,Customer,eu-dev
+Customer Operations,API Manager Environment Administrator,Customer,eu-test
+Customer Operations,API Manager Environment Administrator,Customer,eu-prod
+Customer Operations,API Group Administrator,Customer,
+Customer Operations,API Versions Owner,Customer,
+Customer Operations,Monitoring Administrator,Customer,
+Customer Operations,Exchange Administrator,Customer,
+Customer Operations,Organization Administrator,Customer,
+Customer Operations,Cloudhub Network Administrator,Customer,
+Customer Operations,Visualizer Editor,Customer,
+Customer Operations,API Manager Environment Administrator,Customer,eu-prod
+Customer Operations,Deploy API Proxies,Customer,eu-prod
+Customer Operations,Manage API Alerts,Customer,eu-prod
+Customer Operations,Manage APIs Configuration,Customer,eu-prod
+Customer Operations,Manage Contracts,Customer,eu-prod
+Customer Operations,Manage Policies,Customer,eu-prod
+Customer Operations,View API Alerts,Customer,eu-prod
+Customer Operations,View Contracts,Customer,eu-prod
+Customer Operations,View Policies,Customer,eu-prod
+Customer Operations,API Creator,Customer,
+Customer Operations,API Versions Owner,Customer,
+Customer Operations,Monitoring Administrator,Customer,
+Customer Operations,Exchange Contributor,Customer,
+Customer Operations,Clear destinations,Customer,eu-prod
+Customer Operations,Manage clients,Customer,eu-prod
+Customer Operations,Manage destinations,Customer,eu-prod
+Customer Operations,View clients,Customer,eu-prod
+Customer Operations,View destinations,Customer,eu-prod
+Customer Operations,Cloudhub Network Viewer,Customer,
+Customer Operations,Delete Applications,Customer,eu-prod
+Customer Operations,Download Applications,Customer,eu-prod
+Customer Operations,Manage Alerts,Customer,eu-prod
+Customer Operations,Manage Application Data,Customer,eu-prod
+Customer Operations,Manage Queues,Customer,eu-prod
+Customer Operations,Manage Schedules,Customer,eu-prod
+Customer Operations,Manage Settings,Customer,eu-prod
+Customer Operations,Manage Tenants,Customer,eu-prod
+Customer Operations,Read Alerts,Customer,eu-prod
+Customer Operations,Read Applications,Customer,eu-prod
+Customer Operations,Manage Application Flows,Customer,eu-prod
+Customer Operations,Create Applications,Customer,eu-prod
+Customer Developers,API Manager Environment Administrator,Customer,eu-dev
+Customer Developers,Deploy API Proxies,Customer,eu-dev
+Customer Developers,Manage API Alerts,Customer,eu-dev
+Customer Developers,Manage APIs Configuration,Customer,eu-dev
+Customer Developers,Manage Contracts,Customer,eu-dev
+Customer Developers,Manage Policies,Customer,eu-dev
+Customer Developers,View API Alerts,Customer,eu-dev
+Customer Developers,View Contracts,Customer,eu-dev
+Customer Developers,View Policies,Customer,eu-dev
+Customer Developers,API Creator,Customer,
+Customer Developers,API Versions Owner,Customer,
+Customer Developers,Monitoring Administrator,Customer,
+Customer Developers,Design Center Developer,Customer,
+Customer Developers,Exchange Contributor,Customer,
+Customer Developers,Clear destinations,Customer,eu-dev
+Customer Developers,Manage clients,Customer,eu-dev
+Customer Developers,Manage destinations,Customer,eu-dev
+Customer Developers,View clients,Customer,eu-dev
+Customer Developers,View destinations,Customer,eu-dev
+Customer Developers,Cloudhub Network Viewer,Customer,
+Customer Developers,Delete Applications,Customer,eu-dev
+Customer Developers,Download Applications,Customer,eu-dev
+Customer Developers,Manage Alerts,Customer,eu-dev
+Customer Developers,Manage Application Data,Customer,eu-dev
+Customer Developers,Manage Queues,Customer,eu-dev
+Customer Developers,Manage Schedules,Customer,eu-dev
+Customer Developers,Manage Settings,Customer,eu-dev
+Customer Developers,Manage Tenants,Customer,eu-dev
+Customer Developers,Read Alerts,Customer,eu-dev
+Customer Developers,Read Applications,Customer,eu-dev
+Customer Developers,Manage Application Flows,Customer,eu-dev
+Customer Developers,Create Applications,Customer,eu-dev
+Customer Developers,Visualizer Editor,Customer,
+Finance Operations,Read Applications,Finance,eu-dev
+Finance Developers,Read Applications,Finance,eu-dev
+Master Data Operations,Read Applications,Master Data,eu-dev
+Master Data Developers,Read Applications,Master Data,eu-dev
+Supply Chain Operations,Read Applications,Supply Chain,eu-dev
+Supply Chain Developers,Read Applications,Supply Chain,eu-dev
+HR Operations,Read Applications,HR,eu-dev
+HR Developers,Read Applications,HR,eu-dev

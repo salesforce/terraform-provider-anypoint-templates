@@ -1,0 +1,6 @@
+team_name,name,context_org_name,context_env_name
+Customer Users,Exchange Viewer,Customer,
+HR Users,Exchange Viewer,HR,
+Finance Users,Exchange Viewer,Finance,
+Master Data Users,Exchange Viewer,Master Data,
+Supply Chain Users,Exchange Viewer,Supply Chain,

@@ -1,0 +1,6 @@
+name,parent_team_name,type
+Customer Users,Belron Users,internal
+HR Users,Belron Users,internal
+Finance Users,Belron Users,internal
+Master Data Users,Belron Users,internal
+Supply Chain Users,Belron Users,internal

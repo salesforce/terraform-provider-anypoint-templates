@@ -1,0 +1,31 @@
+bg_name,name,type
+Customer,na-prod,production
+Customer,na-dev,sandbox
+Customer,na-test,sandbox
+Customer,eu-prod,production
+Customer,eu-dev,sandbox
+Customer,eu-test,sandbox
+HR,na-prod,production
+HR,na-dev,sandbox
+HR,na-test,sandbox
+HR,eu-prod,production
+HR,eu-dev,sandbox
+HR,eu-test,sandbox
+Finance,na-prod,production
+Finance,na-dev,sandbox
+Finance,na-test,sandbox
+Finance,eu-prod,production
+Finance,eu-dev,sandbox
+Finance,eu-test,sandbox
+Master Data,na-prod,production
+Master Data,na-dev,sandbox
+Master Data,na-test,sandbox
+Master Data,eu-prod,production
+Master Data,eu-dev,sandbox
+Master Data,eu-test,sandbox
+Supply Chain,na-prod,production
+Supply Chain,na-dev,sandbox
+Supply Chain,na-test,sandbox
+Supply Chain,eu-prod,production
+Supply Chain,eu-dev,sandbox
+Supply Chain,eu-test,sandbox
