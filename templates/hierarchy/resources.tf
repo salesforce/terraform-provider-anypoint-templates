@@ -2,8 +2,8 @@ resource "anypoint_bg" "bgs" {
   count = length(local.bgs_list)
 
   name = element(local.bgs_list, count.index).name
-  parent_organization_id = var.root_org
-  owner_id = lookup(local.data_users_map, element(local.bgs_list, count.index).owner_username).id
+  parentorganizationid = var.root_org
+  ownerid = lookup(local.data_users_map, element(local.bgs_list, count.index).owner_username).id
   entitlements_createsuborgs = element(local.bgs_list, count.index).create_suborgs
   entitlements_createenvironments = element(local.bgs_list, count.index).create_env
   entitlements_globaldeployment = element(local.bgs_list, count.index).global_deployment
@@ -24,7 +24,6 @@ resource "anypoint_env" "envs" {
   type = element(local.envs_list, count.index).type
 }
 
-
 resource "anypoint_user" "users" {
   count = length(local.users_list)
 
@@ -36,7 +35,6 @@ resource "anypoint_user" "users" {
   phone_number = element(local.users_list, count.index).phone
   password = element(local.users_list, count.index).pwd
 }
-
 
 resource "anypoint_team" "lvl1_teams" {
   count = length(local.teams_lvl1_list)
@@ -56,6 +54,14 @@ resource "anypoint_team" "lvl2_teams" {
   team_type = element(local.teams_lvl2_list, count.index).type
 }
 
+resource "anypoint_team" "lvl3_teams" {
+  count = length(local.teams_lvl3_list)
+
+  org_id = var.root_org
+  parent_team_id = lookup(local.data_teams_lvl2_map, element(local.teams_lvl3_list, count.index).parent_team_name, {id: ""}).id
+  team_name = element(local.teams_lvl3_list, count.index).name
+  team_type = element(local.teams_lvl3_list, count.index).type
+}
 
 resource "anypoint_team_roles" "lvl1_teams_roles" {
   count = length(local.teams_lvl1_list)
@@ -80,6 +86,7 @@ resource "anypoint_team_roles" "lvl1_teams_roles" {
     }
   }
 }
+
 resource "anypoint_team_roles" "lvl2_teams_roles" {
   count = length(local.teams_lvl2_list)
 
@@ -98,15 +105,35 @@ resource "anypoint_team_roles" "lvl2_teams_roles" {
       ], 0)
       context_params = {
         org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
-        envId = length(roles.value["context_env_name"]) > 0 ? element([ 
-            for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env 
-            if env.organization_id == lookup(local.data_bg_map, roles.value["context_org_name"]).id 
-          ], 0).id : null
+        envId = length(roles.value["context_env_name"]) > 0 ? element(lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}"), 0).id : null
       }
     }
   }
 }
 
+resource "anypoint_team_roles" "lvl3_teams_roles" {
+  count = length(local.teams_lvl3_list)
+
+  org_id = var.root_org
+  team_id = anypoint_team.lvl3_teams[count.index].id
+  
+  dynamic "roles" {
+    for_each = [
+      for role in local.teams_lvl3_roles_list : role
+      if role.team_name == anypoint_team.lvl3_teams[count.index].team_name
+    ]
+    content {
+      role_id = element([
+        for iter in local.data_roles_list : iter.role_id
+        if iter.name == roles.value.name
+      ], 0)
+      context_params = {
+        org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        envId = length(roles.value["context_env_name"]) > 0 ? element(lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}"), 0).id : null
+      }
+    }
+  }
+}
 
 resource "anypoint_team_member" "lvl1_teams_members" {
   count = length(local.teams_lvl1_members_list)
@@ -115,10 +142,19 @@ resource "anypoint_team_member" "lvl1_teams_members" {
   team_id = lookup(local.data_teams_lvl1_map,element(local.teams_lvl1_members_list, count.index).team_name).team_id
   user_id = lookup(local.data_users_map, element(local.teams_lvl1_members_list, count.index).user_name).id
 }
+
 resource "anypoint_team_member" "lvl2_teams_members" {
   count = length(local.teams_lvl2_members_list)
 
   org_id = var.root_org
   team_id = lookup(local.data_teams_lvl2_map, element(local.teams_lvl2_members_list, count.index).team_name).team_id
   user_id = lookup(local.data_users_map, element(local.teams_lvl2_members_list, count.index).user_name).id
+}
+
+resource "anypoint_team_member" "lvl3_teams_members" {
+  count = length(local.teams_lvl3_members_list)
+
+  org_id = var.root_org
+  team_id = lookup(local.data_teams_lvl3_map, element(local.teams_lvl3_members_list, count.index).team_name).team_id
+  user_id = lookup(local.data_users_map, element(local.teams_lvl3_members_list, count.index).user_name).id
 }
