@@ -9,11 +9,13 @@ locals {
   teams_lvl2_csv_data = file("${local.csv_folder}/teams_lvl2.csv")
   teams_lvl2_roles_csv_data = file("${local.csv_folder}/teams_lvl2_roles.csv")
   teams_lvl2_members_csv_data = file("${local.csv_folder}/teams_lvl2_members.csv")
+  vpcs_csv_data = file("${local.csv_folder}/vpcs.csv")
 
 
   bgs_list = csvdecode(local.bg_csv_data)
   envs_list = csvdecode(local.env_csv_data)
   users_list = csvdecode(local.users_csv_data)
+  vpcs_list = csvdecode(local.vpcs_csv_data)
   
   teams_lvl1_list = csvdecode(local.teams_lvl1_csv_data)
   teams_lvl1_roles_list = csvdecode(local.teams_lvl1_roles_csv_data)
