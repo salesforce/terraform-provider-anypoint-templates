@@ -1,3 +1,3 @@
 name,owner_username,create_suborgs,create_env,global_deployment,vcores_prod,vcores_sandbox,vcores_design,static_ips,vpcs,lbs,vpns
-max_bg,max_cat_007,true,true,true,0.1,0.2,0.1,0,1,0,0
-maxy_bg,max_cat_007,true,true,true,0.1,0.2,0.1,0,1,0,0
+max_bg,sab,true,true,true,0.1,0.2,0.1,0,1,0,0
+maxy_bg,sab,true,true,true,0.1,0.2,0.1,0,1,0,0

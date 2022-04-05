@@ -2,8 +2,8 @@ resource "anypoint_bg" "bgs" {
   count = length(local.bgs_list)
 
   name = element(local.bgs_list, count.index).name
-  parentorganizationid = var.root_org
-  ownerid = lookup(local.data_users_map, element(local.bgs_list, count.index).owner_username).id
+  parent_organization_id = var.root_org
+  owner_id = lookup(local.data_users_map, element(local.bgs_list, count.index).owner_username).id
   entitlements_createsuborgs = element(local.bgs_list, count.index).create_suborgs
   entitlements_createenvironments = element(local.bgs_list, count.index).create_env
   entitlements_globaldeployment = element(local.bgs_list, count.index).global_deployment
@@ -100,7 +100,7 @@ resource "anypoint_team_roles" "lvl2_teams_roles" {
         org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
         envId = length(roles.value["context_env_name"]) > 0 ? element([ 
             for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env 
-            if env.organizationid == lookup(local.data_bg_map, roles.value["context_org_name"]).id 
+            if env.organization_id == lookup(local.data_bg_map, roles.value["context_org_name"]).id 
           ], 0).id : null
       }
     }

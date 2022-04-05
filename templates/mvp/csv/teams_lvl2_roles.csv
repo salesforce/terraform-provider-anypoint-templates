@@ -8,7 +8,7 @@ Max BG Org Admins,Monitoring Administrator,max_bg,
 Max BG Org Admins,Exchange Administrator,max_bg,
 Max BG Org Admins,Organization Administrator,max_bg,
 Max BG Org Admins,Cloudhub Network Administrator,max_bg,
-Max BG Org Admins,Visualizer Editor,max_bg,
+Max BG Org Admins,Visualizer Editor,SabOrg,
 Max BG Consumers,Exchange Viewer,max_bg,
 Max BG Developers,API Manager Environment Administrator,max_bg,DEV
 Max BG Developers,Deploy API Proxies,max_bg,DEV
@@ -42,7 +42,7 @@ Max BG Developers,Read Alerts,max_bg,DEV
 Max BG Developers,Read Applications,max_bg,DEV
 Max BG Developers,Manage Application Flows,max_bg,DEV
 Max BG Developers,Create Applications,max_bg,DEV
-Max BG Developers,Visualizer Editor,CAT,
+Max BG Developers,Visualizer Editor,SabOrg,
 Max BG Developers,API Manager Environment Administrator,max_bg,QA
 Max BG Developers,Deploy API Proxies,max_bg,QA
 Max BG Developers,Manage API Alerts,max_bg,QA
@@ -100,7 +100,7 @@ Max BG Ops,Read Alerts,max_bg,PROD
 Max BG Ops,Read Applications,max_bg,PROD
 Max BG Ops,Manage Application Flows,max_bg,PROD
 Max BG Ops,Create Applications,max_bg,PROD
-Max BG Ops,Visualizer Editor,CAT,
+Max BG Ops,Visualizer Editor,SabOrg,
 Max BG Testers,API Manager Environment Administrator,max_bg,QA
 Max BG Testers,Deploy API Proxies,max_bg,QA
 Max BG Testers,Manage API Alerts,max_bg,QA
@@ -132,5 +132,5 @@ Max BG Testers,Read Alerts,max_bg,QA
 Max BG Testers,Read Applications,max_bg,QA
 Max BG Testers,Manage Application Flows,max_bg,QA
 Max BG Testers,Create Applications,max_bg,QA
-Max BG Testers,Visualizer Editor,CAT,
-Maxy BG Org Admins,Visualizer Editor,CAT,
+Max BG Testers,Visualizer Editor,SabOrg,
+Maxy BG Org Admins,Visualizer Editor,SabOrg,
