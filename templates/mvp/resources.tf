@@ -24,7 +24,6 @@ resource "anypoint_env" "envs" {
   type = element(local.envs_list, count.index).type
 }
 
-
 resource "anypoint_user" "users" {
   count = length(local.users_list)
 
@@ -131,3 +130,22 @@ resource "anypoint_vpc" "vpcs" {
   cidr_block = element(local.vpcs_list, count.index).cidr
   region = element(local.vpcs_list, count.index).region
 }
+
+/*resource "anypoint_dlb" "dlbs" {
+  count = length(local.dlbs_list)
+
+  org_id = lookup(local.data_bg_map, element(local.dlbs_list, count.index).bg_name).id
+  vpc_id = lookup(local.data_vpc_map, element(local.dlbs_list, count.index).vpc_name).id
+  name = element(local.dlbs_list, count.index).name
+  
+  ssl_endpoints {
+      public_key = element(local.dlbs_list, count.index).public_key
+      private_key = element(local.dlbs_list, count.index).private_key
+      
+      mappings {
+        input_uri = ""
+        app_uri = ""
+        app_name = ""
+      }
+  }
+}*/
