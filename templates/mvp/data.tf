@@ -10,12 +10,15 @@ locals {
   teams_lvl2_roles_csv_data = file("${local.csv_folder}/teams_lvl2_roles.csv")
   teams_lvl2_members_csv_data = file("${local.csv_folder}/teams_lvl2_members.csv")
   vpcs_csv_data = file("${local.csv_folder}/vpcs.csv")
-
+  dlbs_csv_data = file("${local.csv_folder}/dlbs.csv")
+  teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl1_group_mappings.csv")
+  teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl2_group_mappings.csv")
 
   bgs_list = csvdecode(local.bg_csv_data)
   envs_list = csvdecode(local.env_csv_data)
   users_list = csvdecode(local.users_csv_data)
   vpcs_list = csvdecode(local.vpcs_csv_data)
+  dlbs_list = csvdecode(local.dlbs_csv_data)
   
   teams_lvl1_list = csvdecode(local.teams_lvl1_csv_data)
   teams_lvl1_roles_list = csvdecode(local.teams_lvl1_roles_csv_data)
@@ -25,6 +28,9 @@ locals {
   teams_lvl2_roles_list = csvdecode(local.teams_lvl2_roles_csv_data)
   teams_lvl2_members_list = csvdecode(local.teams_lvl2_members_csv_data)
 
+  teams_lvl1_group_mappings_list = csvdecode(local.teams_lvl1_group_mappings_csv_data)
+  teams_lvl2_group_mappings_list = csvdecode(local.teams_lvl2_group_mappings_csv_data)
+
   role_names_list = distinct( concat([ for role in local.teams_lvl1_roles_list : role.name ], [ for role in local.teams_lvl2_roles_list : role.name ]) )
 
   #flattened result from roles data source
@@ -32,6 +38,14 @@ locals {
 
   # list of all bgs after bg creation
   all_bgs_list = concat([data.anypoint_bg.bg], anypoint_bg.bgs)
+
+   # list of all vpcs after vpc creation
+  all_vpcs_list = anypoint_vpc.vpcs
+
+  #map of all vpcs
+  data_vpc_map = {
+    for b in local.all_vpcs_list : b.name => b
+  }
 
   #map of all business groups
   data_bg_map = {
