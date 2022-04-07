@@ -11,6 +11,8 @@ locals {
   teams_lvl2_members_csv_data = file("${local.csv_folder}/teams_lvl2_members.csv")
   vpcs_csv_data = file("${local.csv_folder}/vpcs.csv")
   dlbs_csv_data = file("${local.csv_folder}/dlbs.csv")
+  teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl1_group_mappings.csv")
+  teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl2_group_mappings.csv")
 
   bgs_list = csvdecode(local.bg_csv_data)
   envs_list = csvdecode(local.env_csv_data)
@@ -25,6 +27,9 @@ locals {
   teams_lvl2_list = csvdecode(local.teams_lvl2_csv_data)
   teams_lvl2_roles_list = csvdecode(local.teams_lvl2_roles_csv_data)
   teams_lvl2_members_list = csvdecode(local.teams_lvl2_members_csv_data)
+
+  teams_lvl1_group_mappings_list = csvdecode(local.teams_lvl1_group_mappings_csv_data)
+  teams_lvl2_group_mappings_list = csvdecode(local.teams_lvl2_group_mappings_csv_data)
 
   role_names_list = distinct( concat([ for role in local.teams_lvl1_roles_list : role.name ], [ for role in local.teams_lvl2_roles_list : role.name ]) )
 

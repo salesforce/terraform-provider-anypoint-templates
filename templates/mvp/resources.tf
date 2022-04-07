@@ -149,3 +149,27 @@ resource "anypoint_vpc" "vpcs" {
       }
   }
 }*/
+
+resource "anypoint_team_group_mappings" "lvl1_team_group_mappings" {
+  count = length(local.teams_lvl1_group_mappings_list)
+
+  org_id = var.root_org
+  team_id = lookup(local.data_teams_lvl1_map,element(local.teams_lvl1_group_mappings_list, count.index).team_name).team_id
+
+  groupmappings {
+      external_group_name = element(local.teams_lvl1_group_mappings_list, count.index).external_group_name
+      membership_type = element(local.teams_lvl1_group_mappings_list, count.index).membership_type
+  }
+}
+
+resource "anypoint_team_group_mappings" "lvl2_team_group_mappings" {
+  count = length(local.teams_lvl2_group_mappings_list)
+
+  org_id = var.root_org
+  team_id = lookup(local.data_teams_lvl2_map,element(local.teams_lvl2_group_mappings_list, count.index).team_name).team_id
+
+  groupmappings {
+      external_group_name = element(local.teams_lvl2_group_mappings_list, count.index).external_group_name
+      membership_type = element(local.teams_lvl2_group_mappings_list, count.index).membership_type
+  }
+}
