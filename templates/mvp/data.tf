@@ -13,12 +13,14 @@ locals {
   dlbs_csv_data = file("${local.csv_folder}/dlbs.csv")
   teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl1_group_mappings.csv")
   teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl2_group_mappings.csv")
+  idp_oidc_csv_data = file("${local.csv_folder}/idp_oidc.csv")
 
   bgs_list = csvdecode(local.bg_csv_data)
   envs_list = csvdecode(local.env_csv_data)
   users_list = csvdecode(local.users_csv_data)
   vpcs_list = csvdecode(local.vpcs_csv_data)
   dlbs_list = csvdecode(local.dlbs_csv_data)
+  idp_oidc_list = csvdecode(local.idp_oidc_csv_data)
   
   teams_lvl1_list = csvdecode(local.teams_lvl1_csv_data)
   teams_lvl1_roles_list = csvdecode(local.teams_lvl1_roles_csv_data)

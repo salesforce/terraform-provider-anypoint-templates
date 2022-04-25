@@ -125,7 +125,7 @@ resource "anypoint_team_member" "lvl2_teams_members" {
 resource "anypoint_vpc" "vpcs" {
   count = length(local.vpcs_list)
 
-  org_id = lookup(local.data_bg_map, element(local.envs_list, count.index).bg_name).id
+  org_id = lookup(local.data_bg_map, element(local.vpcs_list, count.index).bg_name).id
   name = element(local.vpcs_list, count.index).name
   cidr_block = element(local.vpcs_list, count.index).cidr
   region = element(local.vpcs_list, count.index).region
@@ -173,3 +173,17 @@ resource "anypoint_team_group_mappings" "lvl2_team_group_mappings" {
       membership_type = element(local.teams_lvl2_group_mappings_list, count.index).membership_type
   }
 }
+
+/*resource "anypoint_idp_oidc" "idp_oidc" {
+  count = length(local.idp_oidc_list)
+
+  org_id = var.root_org
+  name = element(local.idp_oidc_list, count.index).name
+  oidc_provider{
+    client_registration_url = element(local.idp_oidc_list, count.index).client_registration_url
+    token_url = element(local.idp_oidc_list, count.index).token_url
+    userinfo_url = element(local.idp_oidc_list, count.index).userinfo_url
+    authorize_url = element(local.idp_oidc_list, count.index).authorize_url
+    issuer = element(local.idp_oidc_list, count.index).issuer
+  }
+}*/
