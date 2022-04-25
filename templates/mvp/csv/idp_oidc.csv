@@ -1,0 +1,2 @@
+bg_name,name,client_registration_url,token_url,userinfo_url,authorize_url,issuer
+max_bg,max_bg_name,https://example.okta.com/oauth2/v1/clients,https://example.okta.com/oauth2/v1/token,https://example.okta.com/oauth2/v1/userinfo,https://example.okta.com/oauth2/v1/authorize,https://example.okta.com/oauth2/v1
