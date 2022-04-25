@@ -17,6 +17,7 @@ Max BG Developers,Manage APIs Configuration,max_bg,DEV
 Max BG Developers,Manage Contracts,max_bg,DEV
 Max BG Developers,Manage Policies,max_bg,DEV
 Max BG Developers,View API Alerts,max_bg,DEV
+Max BG Developers,View APIs Configuration,max_bg,DEV
 Max BG Developers,View Contracts,max_bg,DEV
 Max BG Developers,View Policies,max_bg,DEV
 Max BG Developers,API Creator,max_bg,
@@ -50,6 +51,7 @@ Max BG Developers,Manage APIs Configuration,max_bg,QA
 Max BG Developers,Manage Contracts,max_bg,QA
 Max BG Developers,Manage Policies,max_bg,QA
 Max BG Developers,View API Alerts,max_bg,QA
+Max BG Developers,View APIs Configuration,max_bg,QA
 Max BG Developers,View Contracts,max_bg,QA
 Max BG Developers,View Policies,max_bg,QA
 Max BG Developers,Clear destinations,max_bg,QA
@@ -76,6 +78,7 @@ Max BG Ops,Manage APIs Configuration,max_bg,PROD
 Max BG Ops,Manage Contracts,max_bg,PROD
 Max BG Ops,Manage Policies,max_bg,PROD
 Max BG Ops,View API Alerts,max_bg,PROD
+Max BG Ops,View APIs Configuration,max_bg,PROD
 Max BG Ops,View Contracts,max_bg,PROD
 Max BG Ops,View Policies,max_bg,PROD
 Max BG Ops,API Creator,max_bg,
@@ -108,6 +111,7 @@ Max BG Testers,Manage APIs Configuration,max_bg,QA
 Max BG Testers,Manage Contracts,max_bg,QA
 Max BG Testers,Manage Policies,max_bg,QA
 Max BG Testers,View API Alerts,max_bg,QA
+Max BG Testers,View APIs Configuration,max_bg,QA
 Max BG Testers,View Contracts,max_bg,QA
 Max BG Testers,View Policies,max_bg,QA
 Max BG Testers,API Creator,max_bg,
