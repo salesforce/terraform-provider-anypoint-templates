@@ -187,3 +187,19 @@ resource "anypoint_team_group_mappings" "lvl2_team_group_mappings" {
     issuer = element(local.idp_oidc_list, count.index).issuer
   }
 }*/
+
+resource "anypoint_vpn" "avpn" {
+  count = length(local.vpn_list)
+
+  org_id = lookup(local.data_bg_map, element(local.vpcs_list, count.index).bg_name).id
+  vpc_id = lookup(local.data_vpc_map,element(local.vpn_list, count.index).vpc_name).id
+  //vpc_id = anypoint_vpc.avpc.id
+  name = element(local.vpn_list, count.index).name
+  remote_asn = element(local.vpn_list, count.index).remote_asn
+  remote_ip_address = element(local.vpn_list, count.index).remote_ip_address
+
+  tunnel_configs {
+    psk = element(local.vpn_list, count.index).psk
+    ptp_cidr = element(local.vpn_list, count.index).ptp_cidr
+  }
+}

@@ -1,0 +1,2 @@
+bg_name,vpc_name,name,remote_asn,remote_ip_address,psk,ptp_cidr
+CAT,staging_vpc,my_vpn,65000,192.168.1.100,23847329fn3u__...,169.254.12.0/30

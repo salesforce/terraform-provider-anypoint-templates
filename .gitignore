@@ -71,3 +71,4 @@ terraform
 release.sh
 templates/testing-alfonso/template.params.tfvars.json
 templates/testing-alfonso/README.md
+templates/mvp/template.params.tfvars.json

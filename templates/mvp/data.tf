@@ -14,6 +14,7 @@ locals {
   teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl1_group_mappings.csv")
   teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl2_group_mappings.csv")
   idp_oidc_csv_data = file("${local.csv_folder}/idp_oidc.csv")
+  vpn_csv_data = file("${local.csv_folder}/vpns.csv")
 
   bgs_list = csvdecode(local.bg_csv_data)
   envs_list = csvdecode(local.env_csv_data)
@@ -21,6 +22,7 @@ locals {
   vpcs_list = csvdecode(local.vpcs_csv_data)
   dlbs_list = csvdecode(local.dlbs_csv_data)
   idp_oidc_list = csvdecode(local.idp_oidc_csv_data)
+  vpn_list = csvdecode(local.vpn_csv_data)
   
   teams_lvl1_list = csvdecode(local.teams_lvl1_csv_data)
   teams_lvl1_roles_list = csvdecode(local.teams_lvl1_roles_csv_data)
@@ -78,6 +80,7 @@ locals {
   data_teams_lvl2_map = {
     for team in anypoint_team.lvl2_teams: team.team_name => team
   }
+  
 }
 
 

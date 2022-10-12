@@ -1,2 +1,2 @@
 bg_name,name,cidr,region
-max_bg,staging_vpc,10.0.0.0/20,us-east-1
+CAT,staging_vpc,10.0.0.0/20,us-east-1
