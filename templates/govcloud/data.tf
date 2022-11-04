@@ -3,16 +3,34 @@ locals {
   bg_csv_data                        = file("${local.csv_folder}/bgs.csv")
   env_csv_data                       = file("${local.csv_folder}/envs.csv")
   users_csv_data                     = file("${local.csv_folder}/users.csv")
-  teams_lvl1_csv_data                = file("${local.csv_folder}/teams_lvl1.csv")
-  teams_lvl1_roles_csv_data          = file("${local.csv_folder}/teams_lvl1_roles.csv")
-  teams_lvl1_members_csv_data        = file("${local.csv_folder}/teams_lvl1_members.csv")
-  teams_lvl2_csv_data                = file("${local.csv_folder}/teams_lvl2.csv")
-  teams_lvl2_roles_csv_data          = file("${local.csv_folder}/teams_lvl2_roles.csv")
-  teams_lvl2_members_csv_data        = file("${local.csv_folder}/teams_lvl2_members.csv")
+
+  teams_lvl1_csv_data                = file("${local.csv_folder}/teams/level1/names.csv")
+  teams_lvl1_roles_csv_data          = file("${local.csv_folder}/teams/level1/roles.csv")
+  teams_lvl1_members_csv_data        = file("${local.csv_folder}/teams/level1/members.csv")
+  teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams/level1/group_mappings.csv")
+
+  teams_lvl2_csv_data                = file("${local.csv_folder}/teams/level2/names.csv")
+  teams_lvl2_roles_csv_data          = file("${local.csv_folder}/teams/level2/roles.csv")
+  teams_lvl2_members_csv_data        = file("${local.csv_folder}/teams/level2/members.csv")
+  teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams/level2/group_mappings.csv")
+
+  teams_lvl3_csv_data                = file("${local.csv_folder}/teams/level3/names.csv")
+  teams_lvl3_roles_csv_data          = file("${local.csv_folder}/teams/level3/roles.csv")
+  teams_lvl3_members_csv_data        = file("${local.csv_folder}/teams/level3/members.csv")
+  teams_lvl3_group_mappings_csv_data = file("${local.csv_folder}/teams/level3/group_mappings.csv")
+
+  teams_lvl4_csv_data                = file("${local.csv_folder}/teams/level4/names.csv")
+  teams_lvl4_roles_csv_data          = file("${local.csv_folder}/teams/level4/roles.csv")
+  teams_lvl4_members_csv_data        = file("${local.csv_folder}/teams/level4/members.csv")
+  teams_lvl4_group_mappings_csv_data = file("${local.csv_folder}/teams/level4/group_mappings.csv")
+
+  teams_lvl5_csv_data                = file("${local.csv_folder}/teams/level5/names.csv")
+  teams_lvl5_roles_csv_data          = file("${local.csv_folder}/teams/level5/roles.csv")
+  teams_lvl5_members_csv_data        = file("${local.csv_folder}/teams/level5/members.csv")
+  teams_lvl5_group_mappings_csv_data = file("${local.csv_folder}/teams/level5/group_mappings.csv")
+
   vpcs_csv_data                      = file("${local.csv_folder}/vpcs.csv")
   dlbs_csv_data                      = file("${local.csv_folder}/dlbs.csv")
-  teams_lvl1_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl1_group_mappings.csv")
-  teams_lvl2_group_mappings_csv_data = file("${local.csv_folder}/teams_lvl2_group_mappings.csv")
   idp_oidc_csv_data                  = file("${local.csv_folder}/idp_oidc.csv")
 
   bgs_list      = csvdecode(local.bg_csv_data)
@@ -25,15 +43,33 @@ locals {
   teams_lvl1_list         = csvdecode(local.teams_lvl1_csv_data)
   teams_lvl1_roles_list   = csvdecode(local.teams_lvl1_roles_csv_data)
   teams_lvl1_members_list = csvdecode(local.teams_lvl1_members_csv_data)
+  teams_lvl1_group_mappings_list = csvdecode(local.teams_lvl1_group_mappings_csv_data)
 
   teams_lvl2_list         = csvdecode(local.teams_lvl2_csv_data)
   teams_lvl2_roles_list   = csvdecode(local.teams_lvl2_roles_csv_data)
   teams_lvl2_members_list = csvdecode(local.teams_lvl2_members_csv_data)
-
-  teams_lvl1_group_mappings_list = csvdecode(local.teams_lvl1_group_mappings_csv_data)
   teams_lvl2_group_mappings_list = csvdecode(local.teams_lvl2_group_mappings_csv_data)
+  
+  teams_lvl3_list                = csvdecode(local.teams_lvl3_csv_data)
+  teams_lvl3_roles_list          = csvdecode(local.teams_lvl3_roles_csv_data)
+  teams_lvl3_members_list        = csvdecode(local.teams_lvl3_members_csv_data)
+  teams_lvl3_group_mappings_list = csvdecode(local.teams_lvl3_group_mappings_csv_data)
 
-  role_names_list = distinct(concat([for role in local.teams_lvl1_roles_list : role.name], [for role in local.teams_lvl2_roles_list : role.name]))
+  teams_lvl4_list                = csvdecode(local.teams_lvl4_csv_data)
+  teams_lvl4_roles_list          = csvdecode(local.teams_lvl4_roles_csv_data)
+  teams_lvl4_members_list        = csvdecode(local.teams_lvl4_members_csv_data)
+  teams_lvl4_group_mappings_list = csvdecode(local.teams_lvl4_group_mappings_csv_data)
+
+  teams_lvl5_list                = csvdecode(local.teams_lvl5_csv_data)
+  teams_lvl5_roles_list          = csvdecode(local.teams_lvl5_roles_csv_data)
+  teams_lvl5_members_list        = csvdecode(local.teams_lvl5_members_csv_data)
+  teams_lvl5_group_mappings_list = csvdecode(local.teams_lvl5_group_mappings_csv_data)
+
+  role_names_list = distinct(concat([for role in local.teams_lvl1_roles_list : role.name],
+    [for role in local.teams_lvl2_roles_list : role.name],
+    [for role in local.teams_lvl3_roles_list : role.name],
+    [for role in local.teams_lvl4_roles_list : role.name],
+    [for role in local.teams_lvl5_roles_list : role.name]))
 
   #flattened result from roles data source
   data_roles_list = flatten([for iter in data.anypoint_roles.roles : iter.roles])
@@ -87,6 +123,19 @@ locals {
     for team in anypoint_team.lvl2_teams : team.team_name => team
   }
 }
+
+  data_teams_lvl3_map = {
+    for team in anypoint_team.lvl3_teams : team.team_name => team
+  }
+
+  data_teams_lvl4_map = {
+    for team in anypoint_team.lvl4_teams : team.team_name => team
+  }
+
+  data_teams_lvl5_map = {
+    for team in anypoint_team.lvl5_teams : team.team_name => team
+  }
+
 
 data "anypoint_roles" "roles" {
   count = length(local.role_names_list)

@@ -55,6 +55,32 @@ resource "anypoint_team" "lvl2_teams" {
   team_type      = element(local.teams_lvl2_list, count.index).type
 }
 
+resource "anypoint_team" "lvl3_teams" {
+  count = length(local.teams_lvl3_list)
+
+  org_id         = var.root_org
+  parent_team_id = lookup(local.data_teams_lvl2_map, element(local.teams_lvl3_list, count.index).parent_team_name, { id : "" }).id
+  team_name      = element(local.teams_lvl3_list, count.index).name
+  team_type      = element(local.teams_lvl3_list, count.index).type
+}
+
+resource "anypoint_team" "lvl4_teams" {
+  count = length(local.teams_lvl4_list)
+
+  org_id         = var.root_org
+  parent_team_id = lookup(local.data_teams_lvl3_map, element(local.teams_lvl4_list, count.index).parent_team_name, { id : "" }).id
+  team_name      = element(local.teams_lvl4_list, count.index).name
+  team_type      = element(local.teams_lvl4_list, count.index).type
+}
+
+resource "anypoint_team" "lvl5_teams" {
+  count = length(local.teams_lvl5_list)
+
+  org_id         = var.root_org
+  parent_team_id = lookup(local.data_teams_lvl4_map, element(local.teams_lvl5_list, count.index).parent_team_name, { id : "" }).id
+  team_name      = element(local.teams_lvl5_list, count.index).name
+  team_type      = element(local.teams_lvl5_list, count.index).type
+}
 
 resource "anypoint_team_roles" "lvl1_teams_roles" {
   count = length(local.teams_lvl1_list)
@@ -106,6 +132,87 @@ resource "anypoint_team_roles" "lvl2_teams_roles" {
   }
 }
 
+resource "anypoint_team_roles" "lvl3_teams_roles" {
+  count = length(local.teams_lvl3_list)
+
+  org_id  = var.root_org
+  team_id = anypoint_team.lvl3_teams[count.index].id
+
+  dynamic "roles" {
+    for_each = [
+      for role in local.teams_lvl3_roles_list : role
+      if role.team_name == anypoint_team.lvl3_teams[count.index].team_name
+    ]
+    content {
+      role_id = element([
+        for iter in local.data_roles_list : iter.role_id
+        if iter.name == roles.value.name
+      ], 0)
+      context_params = {
+        org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        envId = length(roles.value["context_env_name"]) > 0 ? element([
+          for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env
+          if env.organization_id == lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        ], 0).id : null
+      }
+    }
+  }
+}
+
+resource "anypoint_team_roles" "lvl4_teams_roles" {
+  count = length(local.teams_lvl4_list)
+
+  org_id  = var.root_org
+  team_id = anypoint_team.lvl4_teams[count.index].id
+
+  dynamic "roles" {
+    for_each = [
+      for role in local.teams_lvl4_roles_list : role
+      if role.team_name == anypoint_team.lvl4_teams[count.index].team_name
+    ]
+    content {
+      role_id = element([
+        for iter in local.data_roles_list : iter.role_id
+        if iter.name == roles.value.name
+      ], 0)
+      context_params = {
+        org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        envId = length(roles.value["context_env_name"]) > 0 ? element([
+          for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env
+          if env.organization_id == lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        ], 0).id : null
+      }
+    }
+  }
+}
+
+resource "anypoint_team_roles" "lvl5_teams_roles" {
+  count = length(local.teams_lvl5_list)
+
+  org_id  = var.root_org
+  team_id = anypoint_team.lvl5_teams[count.index].id
+
+  dynamic "roles" {
+    for_each = [
+      for role in local.teams_lvl5_roles_list : role
+      if role.team_name == anypoint_team.lvl5_teams[count.index].team_name
+    ]
+    content {
+      role_id = element([
+        for iter in local.data_roles_list : iter.role_id
+        if iter.name == roles.value.name
+      ], 0)
+      context_params = {
+        org = lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        envId = length(roles.value["context_env_name"]) > 0 ? element([
+          for env in lookup(local.data_envs_map, "${roles.value.context_org_name}:${roles.value.context_env_name}") : env
+          if env.organization_id == lookup(local.data_bg_map, roles.value["context_org_name"]).id
+        ], 0).id : null
+      }
+    }
+  }
+}
+
 
 resource "anypoint_team_member" "lvl1_teams_members" {
   count = length(local.teams_lvl1_members_list)
@@ -120,6 +227,30 @@ resource "anypoint_team_member" "lvl2_teams_members" {
   org_id  = var.root_org
   team_id = lookup(local.data_teams_lvl2_map, element(local.teams_lvl2_members_list, count.index).team_name).team_id
   user_id = lookup(local.data_users_map, element(local.teams_lvl2_members_list, count.index).user_name).id
+}
+
+resource "anypoint_team_member" "lvl3_teams_members" {
+  count = length(local.teams_lvl3_members_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl3_map, element(local.teams_lvl3_members_list, count.index).team_name).team_id
+  user_id = lookup(local.data_users_map, element(local.teams_lvl3_members_list, count.index).user_name).id
+}
+
+resource "anypoint_team_member" "lvl4_teams_members" {
+  count = length(local.teams_lvl4_members_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl3_map, element(local.teams_lvl4_members_list, count.index).team_name).team_id
+  user_id = lookup(local.data_users_map, element(local.teams_lvl4_members_list, count.index).user_name).id
+}
+
+resource "anypoint_team_member" "lvl5_teams_members" {
+  count = length(local.teams_lvl5_members_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl4_map, element(local.teams_lvl5_members_list, count.index).team_name).team_id
+  user_id = lookup(local.data_users_map, element(local.teams_lvl5_members_list, count.index).user_name).id
 }
 
 resource "anypoint_vpc" "vpcs" {
@@ -171,6 +302,42 @@ resource "anypoint_team_group_mappings" "lvl2_team_group_mappings" {
   groupmappings {
     external_group_name = element(local.teams_lvl2_group_mappings_list, count.index).external_group_name
     membership_type     = element(local.teams_lvl2_group_mappings_list, count.index).membership_type
+  }
+}
+
+resource "anypoint_team_group_mappings" "lvl3_team_group_mappings" {
+  count = length(local.teams_lvl3_group_mappings_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl3_map, element(local.teams_lvl3_group_mappings_list, count.index).team_name).team_id
+
+  groupmappings {
+    external_group_name = element(local.teams_lvl3_group_mappings_list, count.index).external_group_name
+    membership_type     = element(local.teams_lvl3_group_mappings_list, count.index).membership_type
+  }
+}
+
+resource "anypoint_team_group_mappings" "lvl4_team_group_mappings" {
+  count = length(local.teams_lvl4_group_mappings_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl4_map, element(local.teams_lvl4_group_mappings_list, count.index).team_name).team_id
+
+  groupmappings {
+    external_group_name = element(local.teams_lvl4_group_mappings_list, count.index).external_group_name
+    membership_type     = element(local.teams_lvl4_group_mappings_list, count.index).membership_type
+  }
+}
+
+resource "anypoint_team_group_mappings" "lvl5_team_group_mappings" {
+  count = length(local.teams_lvl5_group_mappings_list)
+
+  org_id  = var.root_org
+  team_id = lookup(local.data_teams_lvl5_map, element(local.teams_lvl5_group_mappings_list, count.index).team_name).team_id
+
+  groupmappings {
+    external_group_name = element(local.teams_lvl5_group_mappings_list, count.index).external_group_name
+    membership_type     = element(local.teams_lvl5_group_mappings_list, count.index).membership_type
   }
 }
 
