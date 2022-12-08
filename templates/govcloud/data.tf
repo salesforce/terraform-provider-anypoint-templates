@@ -122,7 +122,6 @@ locals {
   data_teams_lvl2_map = {
     for team in anypoint_team.lvl2_teams : team.team_name => team
   }
-}
 
   data_teams_lvl3_map = {
     for team in anypoint_team.lvl3_teams : team.team_name => team
@@ -135,7 +134,7 @@ locals {
   data_teams_lvl5_map = {
     for team in anypoint_team.lvl5_teams : team.team_name => team
   }
-
+}
 
 data "anypoint_roles" "roles" {
   count = length(local.role_names_list)
