@@ -24,7 +24,7 @@ Copy the template folder to your workspace and perform the following action:
 2. Copy the `template.params.tfvars.json` file content into another json file (we will use `params.tfvars.json` to refer to this copy).
 3. Fill the `params.tfvars.json` file with your own parameters. You will find more information about each parameter in the `Terraform parameters file` section
 4. To execute the script in order to create parameters, please use the following commands on your terminal:
-    * If it's the first time use execute this specific instance of the template, use the following command to initialize terraform providers: 
+    * If it's the first time use, execute this specific instance of the template, use the following command to initialize terraform providers: 
       ```shell
       $ terraform init  
       ```
@@ -32,14 +32,14 @@ Copy the template folder to your workspace and perform the following action:
       ```shell
       $ terraform apply -var-file="params.tfvars.json"
       ```
-      Terraform will show you all the actions that it is going to perform and will ask for you validation. 
+      Terraform will show you all the actions that it is going to perform and will ask for your validation. 
     * To destroy the resources you've previously created, use the following:
       ```shell
       $ terraform destroy -var-file="params.tfvars.json"
       ```
 
 ## Resource creation and recycling
-When the terraform script is executed, terraform compiles your parameters to know exactly what it is going to create and in which order. Following is a schema that shows the resource that are created. Arrows show dependency relationship. Terraform will start by creating the roots and make its way down through dependencies. 
+When the terraform script is executed, terraform compiles your parameters to know exactly what it is going to create and in which order. Following is a schema that shows the resources that are created. Arrows show dependency relationship. Terraform will start by creating the roots and make its way down through dependencies. 
 
 ![alt text](resources/terraform_plan.png "Terraform plan")
 
@@ -47,7 +47,7 @@ When Terraform applies changes, the `tfstate` file is updated to save the latest
 
 When Terraform is executed for update, it will compare against its latest state to refresh and recycle all resources. 
 
-> **N.B:** If the resource have been changed outside terraform (using anypoint UI for example) terraform will not include those changes, and they will be lost.
+> **N.B:** If the resources have been changed outside terraform (using anypoint UI for example) terraform will not include those changes, and they will be lost.
 
 ## Terraform parameters file
 The parameters file is used to contextualize terraform's execution. Following is the list of parameters
@@ -87,7 +87,7 @@ Following is the description of the columns in the `csv/users.csv` file:
 | username      | the username of the user, it must be unique and shouldn't be used twice (even if the user has been deleted) | userxx1 |
 | firstname     | the user's firstname | john |
 | lastname      | the user's lastname  | doe  |
-| email         | the usere's email address | my@email.com |
+| email         | the user's email address | my@email.com |
 | phone         | the user's phone number   | 0121231232   |
 | pwd           | the user's initial password | mysupersecurepwd |
 
@@ -111,7 +111,7 @@ Following is the description of the columns in the `csv/teams_roles.csv` file:
 | name          | the role's name | API Group Administrator |
 | context_env_index | if the role spans environments, then provide the environment's name to which the role will be applied against | INT |
 
-Roles will be bind by default to the root org (provided in parameters)
+Roles will be bound by default to the root org (provided in parameters)
 
 #### Team Members
 Following is the description of the columns in the `csv/teams_members.csv` file:
